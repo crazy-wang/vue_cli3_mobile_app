@@ -17,7 +17,7 @@ npm run dev
 
 ### Compiles and minifies for production [区分不同环境打包命令]
 ```
-npm run build:prod/tast
+npm run build:prod/test
 ```
 
 ### Run your tests
