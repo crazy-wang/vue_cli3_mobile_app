@@ -41,7 +41,7 @@
     methods: {
       async login() {
         // 如果是有单点登陆或者免登陆就不能用sessionStorage了，不能保存。且服务端不能给客户端传写session，cookie可以
-        removeToken() //清除token;保证每次点击登陆之前是没有token的
+        // removeToken() //清除token;保证每次点击登陆之前是没有token的。保证每次跳登录页后就不能回退其他页，故在路由拦截做处理
         console.log('登陆')
         let params = {
           username: this.username,

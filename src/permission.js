@@ -1,8 +1,9 @@
 import router from './router'
-import { getToken } from './utils/auth'
+import { getToken, removeToken } from './utils/auth'
 
 router.beforeEach((to, from, next) => {
   if (to.path === '/login') {
+    removeToken()
     next()
   } else {
     // 非登录页进入时拦截处理
